@@ -1,0 +1,990 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: poppins;
+  background-color: #f2f2f2;
+
+}
+
+/*CREATE VARIBALES IN CSS*/
+:root {
+  --header-color: #0b2f00;
+  --headertextcolor: #fff;
+  --login-button-text-color: #fff;
+  --text-color: #f2f2f2;
+  --offerproducts-price-bg-color: #f7dd48;
+  --offerproducts-price-text-color: #d10202;
+  --ratingstar-color:#fd8802;
+  --cosmetic-and-skincare-highlight-color:#fed2d1;
+  --newcolor-rate:#ed2c2d;
+}
+
+/* HEADER AND NAV BAR STYLES*/
+header{
+  position: fixed;
+  width:100%;
+  top:0;
+  right:0;
+  height:130px;
+  z-index:1111;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  background: transparent;
+  padding:28px 12%;
+  transition: all .50s ease;
+  background-color: var(--header-color);
+}
+.logo {
+  
+}
+.logo img{
+  width:200px;
+  margin-left: 200px;
+  height:auto;
+}
+.navbar{
+  display: flex;
+}
+.navbar{
+  list-style: none;
+}
+.navbar a{
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding:5px 0;
+  margin:0px 30px;
+  transition: all .50s ease;
+  text-decoration: none;
+}
+.navbar a:hover{
+  color:#51ac37;
+}
+.main{
+  display: flex;
+  align-items: center;
+}
+.main a{
+  margin-right: 25px;
+  margin-left: 10px;
+  color:var(--headertextcolor);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.main a i{
+  font-size: 20px;
+  color:var(--offerproducts-price-bg-color);
+}
+#menu-icon{
+  font-size: 35px;
+  color:var(--login-button-text-color);
+  cursor: pointer;
+  z-index: 10001;
+  display:none ;
+}
+/*BACKGROUND-IMAGE-STYLES*/
+
+.background-image-section {
+
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(images/backcoverimg.webp);
+  background-size: cover;
+  position: relative;
+  margin-top: 105px;
+}
+
+.background-image-section div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(rgba(8, 18, 58, 0.7), rgba(4, 9, 30, 0.7));
+}
+
+/*H1-GREEN-STORE*/
+.background-image-section h1 {
+  position: absolute;
+  color: #fff;
+  top: 190px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4em;
+  letter-spacing: 1px;
+}
+
+.background-image-section p {
+  position: absolute;
+  top: 260px;
+  color: #fff;
+  text-align: justify;
+  padding:0px 100px 0px 100px;
+  line-height: 30px;
+
+}
+.background-image-section p i{
+  width:30px;
+  color:#f7dd48;
+}
+
+/*ABOUT-US-ON-BG-IMAGE*/
+.about-us-on-backgroung-image {
+  position: absolute;
+  top: 430px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-us-on-backgroung-image button {
+  padding: 15px 55px 15px 55px;
+  border: 2px solid #51ac37;
+  background: transparent;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.about-us-on-backgroung-image button:hover {
+  border: none;
+  background-color: #fff;
+  color: #51ac37;
+  border-radius: 2px;
+  transition: 0.30s;
+}
+
+/*services show breif with icon*/
+
+.services-iconly-show{
+  display: flex;
+  justify-content: center;
+  padding:0px 100px 0px 100px;
+  margin-top: 30px;
+  
+}
+.service-show-1{
+  width:200px;
+  color:var(--header-color);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.service-show-1 span i{
+  width:30px;
+  color:#d10202;
+}
+
+/*homepage products show and link their page styles*/
+
+.vegetables-product-div{
+  width:400px;
+  height:200px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.20);
+  
+}
+.vegetables-product-div img{
+  width:100%;
+  height:100%;
+  border-radius: 10px;
+}
+.vegetables-product-div h2{
+  position: absolute;
+  top:10%;
+  color:var(--header-color);
+  font-size: 25px;
+  left:20px
+}
+.vegetables-product-div h4{
+  top:30%;
+  position: absolute;
+  color:var(--header-color);
+  font-weight: 600;
+  left:20px
+}
+.vegetables-product-div a{
+  position: absolute;
+  top:60%;
+  left:0;
+  text-decoration: none;
+  background-color:#51ac37;
+  color:var(--login-button-text-color);
+  padding:8px 30px 8px 30px ;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  left:20px
+}
+
+/*make it flex with main section*/
+.catagery-show-main-section{
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  margin-top: 90px;
+}
+
+
+
+/*SPECIAL OFFER SECTION STYLES*/
+
+/*special offer heading styles*/
+.special-offfer-heding {
+  margin-top: 70px;
+  font-size: 1.5em;
+  color: #0b2f00;
+  text-align: left;
+  margin-left: 50px;
+}
+
+/*create grid */
+.special-offer-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 80px;
+}
+
+.special-offer-grid-container section {
+  border-bottom-right-radius: 30px;
+  height:500px;
+  width: 300px;
+  background-color: #fff;
+  position: relative;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.special-offer-grid-container section:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.offer-product-image{
+  width:300px;
+  height:200px;
+}
+
+.offer-product-image img {
+  width: 100%;
+  height:100%;
+  position: relative;
+}
+
+.offer-product-image span {
+  position: absolute;
+  top: 150px;
+  right: 20px;
+  background-color:var(--offerproducts-price-bg-color);
+  padding: 10px;
+  border-radius: 6px;
+  color:var(--offerproducts-price-text-color);
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.offer-info h4 {
+  margin-top: 20px;
+  text-align: center;
+  color: #51ac37;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.offer-info p {
+  margin-top: 20px;
+  text-align: center;
+}
+.offer-info p i{
+  color:var(--ratingstar-color);
+}
+
+/*add to cart button in special offer styles*/
+.offer-add-to-cart-button button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  
+  padding: 10px 90px 10px 90px;
+  border-bottom-right-radius: 30px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+.add-to-cart-img {
+  width: 20px;
+  margin-right: 15px;
+  position: absolute;
+  left: 75px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.offer-add-to-cart-button button:active {
+  opacity: 0.8;
+  transition: 0.5;
+}
+
+.offer-perecentage {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: var(--offerproducts-price-text-color);
+  color: #fff;
+  border-bottom-right-radius: 10px;
+  font-weight: 500;
+  padding: 5px;
+  opacity: 0;
+  transition: 0.30s;
+  font-size: 18px;
+}
+
+.special-offer-grid-container section:hover .offer-perecentage {
+  opacity: 1;
+}
+
+/*crate popular beauty choice styles*/
+/*popular cosmetic products */
+
+.new-products-heading{
+  margin-top:70px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.new-products-heading h1{
+  color:var(--header-color);
+  font-size: 2.5em;
+}
+.new-products-heading h1::after,.new-products-heading h1::before{
+  content: '';
+  height:1px;
+  display: block;
+  background-color: var(--header-color);
+}
+.new-products-heading h1{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:5px;
+  align-items: center;
+}
+.cosmetic-product-name-in-td{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* new arrival products styles*/
+.main-flex-container{
+  display: flex;
+  padding:50px;
+  
+}
+
+.flex-1{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--headertextcolor);
+  padding:50px;
+  width:150px;
+  height: auto;
+  position: relative;
+  margin:0px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  justify-content: center;
+  
+}
+.i-star-link{
+  margin-left:25px;
+  margin:25px 0;
+  display: flex;
+  justify-content: center;
+}
+.i-star-link i{
+  width:15px;
+}
+.flex-image{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  height:150px;
+  
+}
+.flex-image span{
+  position: absolute;
+  top:15px;
+  left:15px;
+  background-color: var(--cosmetic-and-skincare-highlight-color);
+  padding:3px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.flex-image img{
+  width:100%;
+  height:100%;
+}
+.flex-use-for{
+  margin:20px 0px 0px 0px;
+  display:flex;
+  justify-content: center;
+}
+.flex-use-for span{
+  text-align: center;
+  font-weight: 600;
+  color:var(--header-color);
+}
+.flex-produts-price{
+  display: flex;
+  justify-content: center;
+}
+.flex-produts-price span{
+  color:var(--offerproducts-price-text-color);
+  font-weight: 600;
+}
+
+
+
+/*delivery-service-describe*/
+
+.delivery-section-heading{
+  text-align: center;
+  color:var(--header-color);
+  font-size: 2.5em;
+}
+.delivery-service-describe{
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  margin-top: 60px;
+  background-color: var(--headertextcolor);
+  margin-left: 60px;
+  margin-right:60px ;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.20);
+}
+.about-delivey-sec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.delivery-service-des-image{
+  width:500px;
+  height:420px;
+
+}
+.delivery-service-des-image img{
+  width:100%;
+  height:100%;
+  border-radius: 20px;
+  
+}
+
+.about-delivey-sec{
+  width:700px;
+  height:auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-delivey-sec p{
+  margin:0px 0px 50px 0px;
+  color: var(--header-color);
+  font-size: 17px;
+}
+.about-delivey-sec ul{
+  margin-left: 50px;
+}
+.about-delivey-sec ul li{
+  margin:5px;
+  color:var(--header-color);
+  font-weight: 600;
+  font-size: 1.1em;
+  
+}
+
+/*create loyalty programme intro on homepage*/
+.loyalty-programme-main-section{
+  display: flex;
+  justify-content: center;
+  margin-top:30px;
+  width:auto;
+  height:250px;
+  position: relative;
+  
+}
+.loyalty-programme-main-section img{
+  border-radius: 10px;
+  
+}
+.loyalty-programme-main-section span{
+  position: absolute;
+  left:30%;
+  top:20%;
+  color:var(--header-color);
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.loyalty-programme-main-section h5{
+  position: absolute;
+  top:35%;
+  left:35%;
+  color:var(--header-color);
+  font-size: 1.1em;
+}
+.loyalty-programme-main-section a{
+  position: absolute;
+  top:60%;
+  left:40%;
+  background-color:var(--offerproducts-price-bg-color);
+  padding:5px 20px 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.loyalty-programme{
+  display: flex;
+  justify-content: center;
+  margin-top: 90px ;
+}
+.loyalty-programme h2{
+  color:var(--header-color);
+  font-size: 30px;
+  text-align: center;
+  color:var(--header-color);
+  
+}
+.loyalty-programme h2::after,.loyalty-programme h2::before{
+  content: '';
+  height:1.5px;
+  background-color: var(--header-color);
+  display: block;
+}
+.loyalty-programme h2{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  gap:20px;
+}
+
+/*creating hover effect*/
+.loyalty-programme-main-section a:hover{
+  color: var(--offerproducts-price-text-color);
+  transition:0.20s;
+}
+
+/*create ratings section*/
+.testimonals-heading{
+  text-align:center;
+  font-size: 30px;
+  color:var(--header-color);
+  font-weight: 600;
+  margin-top: 100px;
+}
+.testimonals-heading::after{
+  content: '';
+  height:3px;
+  background-color: #51ac37;
+  display: block;
+  width:200px;
+  margin-left:50%;
+  transform: translate(-50%,-50%);
+}
+
+/*section body styles*/
+
+.main-testimonal-section{
+  padding:60px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.testimonals-1{
+  width:200px;
+  height:auto;
+  background-color: var(--headertextcolor);
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  border-radius: 10px; 
+  margin:0 20px;
+}
+.img-1{
+  width:100%;
+  height:100px;
+  display: flex;
+  justify-content: center;
+}
+.img-1 img {
+  width:80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.riviewes-name{
+   margin:10px 0;
+   display: flex;
+   justify-content: center;
+}
+.riviewes-name span{
+  color:var(--header-color);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.star-div{
+  display: flex;
+  justify-content: center;
+  margin:5px 0;
+}
+i{
+  color:var(--ratingstar-color);
+  font-size: 12px;
+  
+}
+.testimonals-paragraph{
+  display: flex;
+  justify-content: center;
+  margin:15px 0;
+  height:200px;
+}
+.testimonals-paragraph p{
+  font-size: 13px;
+  text-align: center;
+}
+
+
+
+
+
+/*CREATE FOOTER STYLES*/
+
+footer {
+  background-color: var(--header-color);
+  padding: 50px;
+  position: relative;
+  height: 300px;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.mobile-times {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-times img {
+  width: 48px;
+}
+
+.mobile-number {
+  color: #51ac37;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.times {
+  color: #fff;
+  font-weight: 500;
+}
+
+/*quik check link styles*/
+.quick-check-links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.quick-check-links h4 {
+  color: #51ac37;
+  font-weight: 600;
+}
+
+.quick-check-links h4:hover {
+  color: #fff;
+}
+
+.quick-check-links ol {
+  margin-top: 10px;
+}
+
+.quick-check-links ol li {
+  color: #fff;
+}
+
+.quick-check-links ol li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+.quick-check-links ol li a:hover {
+  color: #51ac37;
+}
+
+/*customer services styles*/
+.customer-service {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.customer-service ul {
+  margin-top: 10px;
+}
+
+.customer-service h4 {
+  color: #51ac37;
+  font-weight: 600;
+}
+
+.customer-service h4:hover {
+  color: #fff;
+}
+
+.customer-service ul li {
+  color: #fff;
+
+}
+
+.customer-service ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.customer-service ul li a:hover {
+  color: #51ac37;
+}
+
+/*social midea links style*/
+
+.social-midea-links {
+  display: flex;
+  margin-left: 50px;
+}
+
+.social-midea-links a {
+  margin-right: 15px;
+}
+
+.social-midea-links a img {
+  width: 35px;
+}
+
+/*copyright and payment methode footer section styles*/
+
+.last-footer-section {
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  background-color: #000;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.copyright-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright-span span {
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+@media (max-width:768px){
+  
+  .background-image-section{
+    width:100%;
+    height:auto;
+    background-position: center;
+    margin-top: 70px;
+  }
+  .background-image-section p{
+    display: none;
+  }
+  .background-image-section h1{
+    position: absolute;
+    top:50%;
+    font-size: 60px;
+    text-align: center;
+    
+  }
+  .about-us-on-backgroung-image{
+    position: absolute;
+    top:70%;
+  }
+  .services-iconly-show{
+    display: flex;
+    
+    flex-wrap: wrap;
+  }
+  .service-show-1{
+    margin-bottom: 10px;
+  }
+  .catagery-show-main-section{
+    display: flex;
+   
+    flex-wrap: wrap;
+    padding:5px;
+    margin-top: 25px;
+  }
+  .vegetables-product-div{
+    margin-bottom: 20px;
+  }
+  .special-offfer-heding{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .special-offer-grid-container{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+  .special-offer-grid-container section{
+    margin:10px;
+  }
+  .new-products-heading h1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .main-flex-container{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .flex-1{
+    margin-bottom:15px;
+  }
+  .delivery-section-heading{
+    text-align: center;
+  }
+ .delivery-service-describe{
+  width:100%;
+  height:auto;
+  margin-left:0;
+  margin-right: 0;
+  position: relative;
+ }
+ .delivery-service-des-image img{
+  width:200px;
+  position: absolute;
+ }
+ .loyalty-programme{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+ .loyalty-programme-main-section{
+  position: relative;
+ }
+ .loyalty-programme-main-section img{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:auto;
+  flex-wrap: wrap;
+ }
+ .loyalty-programme-main-section span{
+   position: absolute;
+   left:10px;
+   font-size:108x ;
+   top:20px;
+ }
+ .loyalty-programme-main-section h5{
+   position: absolute;
+   left:10px;
+ }
+ .loyalty-programme-main-section a{
+  position: absolute;
+  left:10px ;
+ }
+ .testimonals-heading{
+  text-align: center;
+ }
+ .main-testimonal-section{
+  display: flex;
+  
+  flex-wrap: wrap;
+ }
+ .testimonals-1{
+  margin-bottom: 15px;
+ }
+ .social-midea-links{
+  display: none;
+ }
+ 
+#menu-icon{
+  display: block;
+}
+.navbar{
+  position: absolute;
+  top:100%;
+  right:-100%;
+  width:270px;
+  height:29vh;
+  background-color: #51ac37;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+  transition: all .50s ease;
+}
+ .logo img{
+  margin:0px;
+  width:40px;
+ }
+ .navbar a{
+  display:block;
+  margin: 5px 0;
+  padding:0px 25px;
+  transition:all .50s ease ;
+ }
+ 
+ .navbar a:hover{
+  color:var(--headertextcolor);
+ }
+ .navbar .open{
+  right:2%;
+ }
+}
+
+
+ 
+/*hamburger menu styles*/
+
+
+  
+
+
+
+  
